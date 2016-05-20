@@ -1,0 +1,323 @@
+/*------------------------------------*\
+        ::Base
+\*------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+@import url(https://fonts.googleapis.com/css?family=Alegreya:400,700,400italic,700italic);
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aquamarine;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: tomato;
+}
+a {
+    color: teal;
+    transition: color 300ms;
+}
+a:hover {
+    color: black;
+}
+img {
+    max-width: 100%;
+}
+input[type="text"]{
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 1.7em;
+    border: 1px solid mediumaquamarine;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: .2em;
+}
+input[type="submit"],
+input[type="button"],
+button {
+    float: left;
+    width: 49.2%;
+    min-width: 10em;
+    height: 1.7em;
+    margin: .1em;
+    background-color: mediumaquamarine;
+    border: 0;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: .2em;
+    box-shadow: 0 1px 1px teal;
+    transition: 300ms;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background-color: tomato;
+}
+
+/*------------------------------------*\
+        ::Sticky Footer
+\*------------------------------------*/
+html, body {
+        height: 99.99999%;/* not 100% to eliminate horizontal scroll */
+        font-family: 'Alegreya', serif;
+}
+.wrap-all-the-things {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+}
+.main-head,
+.main-foot {
+        display: table-row;
+        height: 1px;
+}
+.main-torso {
+        height: auto;
+}
+
+/*------------------------------------*\
+    ::Basic Page
+\*------------------------------------*/
+.main-torso {
+    margin: 2rem auto;
+    max-width: 40em;
+    box-shadow: 0 1px 2px teal;
+}
+.main-torso:before,
+.main-torso:after {
+    content: " ";
+    display: table;
+}
+.main-torso:after {
+    clear: both;
+}
+h1 {
+    margin: 0;
+    padding: .5em;
+    background-color: mediumaquamarine;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: white;
+    text-shadow: 0 1px 1px teal;
+}
+[class*="__inner"] {
+    margin: 0 auto;
+    max-width: 40em;
+    float: left;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+}
+
+/*------------------------------------*\
+    ::Global Nav
+\*------------------------------------*/
+nav ul,
+nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav a:link, nav a:visited {
+    color: teal;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 300ms;
+}
+nav li li a:link {
+    font-weight: normal;
+    font-size: .8em;
+}
+
+/*------------------------------------*\
+    ::Header Nav
+\*------------------------------------*/
+.main-nav {
+    width: 100%;
+    background-color: white;
+    height: 3em;
+    border-bottom: 1px solid mediumaquamarine;
+}
+.main-nav__inner {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    max-width: 40em;
+    padding: .2em;
+    text-align: right;
+}
+.main-nav a:link {
+    color: tomato;
+}
+.main-nav a:hover {
+    color: mediumaquamarine;
+}
+.main-nav__trigger {
+    display: inline-block;
+    padding: .5em;
+    text-align: center;
+    background-color: tomato;
+    border-radius: .2em;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 1px 1px mediumaquamarine;
+}
+.main-nav__menu {
+    position: absolute;
+    z-index: 10;
+    top: 3em;
+    right: .5em;
+    width: 12em;
+    margin-top: -1px;
+    background-color: white;
+    border: 1px solid mediumaquamarine;
+    border-width: 0 1px 1px;
+    text-align: left;
+}
+.main-nav__menu > li {
+    background-color: white;
+    position: relative;
+    padding: .5em 2em .5em .5em;
+    cursor: pointer;
+}
+.main-nav__menu > li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 1rem;
+    top: .5em;
+    width: .7rem;
+    height: .7rem;
+    border: 0 solid tomato;
+    border-width: 0 0 4px 4px;
+    transform: rotate(-45deg);
+    transition: border-color 300ms;
+}
+.main-nav__menu > li:hover:after {
+    border-color: mediumaquamarine;
+}
+.main-nav li ul {
+    display: none;
+}
+
+/*------------------------------------*\
+    ::Column Module
+\*------------------------------------*/
+.col h2 {
+    margin-bottom: 0;
+    float: left;
+    width: 100%;
+}
+.col img {
+    display: block;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    box-shadow: 0 1px 2px lightslategray;
+}
+.col__first,
+.col__second {
+    float: left;
+    width: 50%;
+}
+@media screen and (max-width: 600px){
+    .col__first,
+    .col__second {
+        width: 100%;
+    }
+}
+
+/*------------------------------------*\
+    ::Registry
+\*------------------------------------*/
+.registry__output {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: .2em;
+    border: 1px solid mediumaquamarine;
+    min-height: 1.7em;
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.registry__output:before {
+    content: "Registered Students:";
+    font-size: 0.8em;
+    font-family: 'Alegreya', serif;
+    font-style: italic;
+    color: mediumaquamarine;
+}
+
+/*------------------------------------*\
+    ::FAQ
+\*------------------------------------*/
+.faq ul {
+    margin: 0;
+    padding: 0;
+}
+.faq li {
+    list-style: none;
+}
+.faq__group {
+    margin-bottom: .5em;
+    padding: .25em .5em;
+    background-color: mediumaquamarine;
+    border-radius: .1em;
+    box-shadow: 0 1px 1px lightslategray;
+}
+.faq__group.active {
+    background-color: aquamarine;
+}
+.faq__question {
+    margin: .5em 0;
+    color: white;
+    transition: color 300ms;
+    cursor: pointer;
+}
+.faq__group:hover .faq__question,
+.faq__group.active .faq__question {
+    color: aquamarine;
+}
+.faq__answer {
+    display: none;
+}
+
+
+/*------------------------------------*\
+    ::Footer
+\*------------------------------------*/
+.main-foot {
+    width: 100%;
+    background-color: white;
+}
+.main-foot:before {
+    content: "";
+    border-top: 1px solid mediumaquamarine;
+    display: block;
+}
+.foot-nav {
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 1rem 0;
+}
+.main-foot a:hover, .main-foot a:active {
+    color: black;
+}
+.main-foot li {
+    float: left;
+    width: 25%;
+}
+.main-foot li li {
+    width: 100%;
+}

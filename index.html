@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Introduction to JavaScript &amp; jQuery</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="wrap-all-the-things">
+        <header class="main-head">
+            <nav class="main-nav">
+                <div class="main-nav__inner">
+                    <div class="main-nav__trigger">
+                        MENU
+                    </div>
+                    <ul class="main-nav__menu">
+                        <li>
+                            <a href="javascript:void(0);">About</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">The Team</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Our Approach</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Portfolio</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Websites</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Logo Design</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Services</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">JavaScript Development</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">CSS Development</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">HTML Development</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">Contact</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">Denver Location</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">Fort Collins Location</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="main-torso">
+            <h1>Introduction to JavaScript &amp; jQuery</h1>
+            <article class="col">
+                <div class="main-torso__inner">
+                    <h2>History of JavaScript</h2>
+                    <div class="col__first">
+                        <p>JavaScript, not to be confused with Java, was created in 10 days in May 1995 by Brendan Eich, then working at Netscape and now of Mozilla. JavaScript was not always known as JavaScript: the original name was Mocha, a name chosen by Marc Andreessen, founder of Netscape. In September of 1995 the name was changed to LiveScript, then in December of the same year, upon receiving a trademark license from Sun, the name JavaScript was adopted. This was somewhat of a marketing move at the time, with Java being very popular around then.</p>
+                    </div>
+                    <div class="col__second">
+                        <p>In 1996 - 1997 JavaScript was taken to ECMA to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape. The work done over this period of time eventually led to the official release of ECMA-262 Ed.1: ECMAScript is the name of the official standard, with JavaScript being the most well known of the implementations. ActionScript 3 is another well-known implementation of ECMAScript, with extensions. <a href="https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript" target="_blank">Read More</a></p>
+                    </div>
+                </div>
+            </article>
+            <article class="faq">
+                <div class="main-torso__inner">
+                    <h2>FAQ</h2>
+                    <ul class="faq__item js-expand">
+                        <li class="faq__group js-expand-toggle">
+                            <h3 class="faq__question">
+                                Why is the alphabet in that order?
+                            </h3>
+                            <div class="faq__answer js-expand-sub">
+                                Is it because of that song? Probably.
+                            </div>
+                        </li>
+                        <li class="faq__group js-expand-toggle">
+                            <h3 class="faq__question">
+                                Would a fly without wings be called a walk?
+                            </h3>
+                            <div class="faq__answer js-expand-sub">
+                                No.
+                            </div>
+                        </li>
+                        <li class="faq__group js-expand-toggle">
+                            <h3 class="faq__question">
+                                Why don't sheep shrink when it rains?
+                            </h3>
+                            <div class="faq__answer js-expand-sub">
+                                Because their wool has not been processed.
+                            </div>
+                        </li>
+                        <li class="faq__group js-expand-toggle">
+                            <h3 class="faq__question">
+                                How long is a piece of string?
+                            </h3>
+                            <div class="faq__answer js-expand-sub">
+                                It depends on how much string you have.
+                            </div>
+                        </li>
+                        <li class="faq__group js-expand-toggle">
+                            <h3 class="faq__question">
+                                Are there any questions?
+                            </h3>
+                            <div class="faq__answer js-expand-sub">
+                                Yes.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="col">
+                <div class="main-torso__inner">
+                    <h2>Uplash Images</h2>
+                    <div class="col__first">
+                        <p>Welcome to the Unsplash API! We have two versions of the API: <a target="_blank" href="https://source.unsplash.com/">Unsplash Source</a> and the <a href="https://unsplash.com/documentation" target="_blank">full JSON API</a>.</p>
+                        <p>Unsplash Source is a simple way to embed photos directly—perfect for quick integrations and small front-end only projects.</p>
+                        <p>For more advanced uses, the JSON API provides a RESTful interface with access to more resource information. To begin developing with the full JSON API, <a href="https://unsplash.com/login" target="_blank">login</a> and <a href="https://unsplash.com/developers/register" target="_blank">register your account</a>.</p>
+                    </div>
+                    <div class="col__second">
+                        <img src="https://source.unsplash.com/category/nature/304x320" alt="Uplash Generated Image" />
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="main-foot">
+            <nav class="foot-nav">
+                <ul class="foot-nav__inner">
+                    <li>
+                        <a href="javascript:void(0);">About</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">The Team</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Our Approach</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Portfolio</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">Websites</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Logo Design</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Services</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">JavaScript Development</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">CSS Development</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">HTML Development</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">Contact</a>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">Denver Location</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">Fort Collins Location</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
