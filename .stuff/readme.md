@@ -15,12 +15,25 @@
 ### Twitter Character Limit Demo: 5 Minutes
 
 ```
+// decide on a char limit to use
+// store the "characters left" element so we can add to it
+// store the textarea so we can determine what's in it
+// add initial character limit
+// when the user types text into the box
+    // subtract what's in the textarea from the char limit
+    // add that nubmer to the characters left field
+    // if it's over the limit
+        // turn it red
+    // if it's not over th elimit
+        // make sure it isn't red
+
+
 // var tweet = document.getElementById('tweet');
 // var charLeft = document.getElementById('char-left');
 // var maxChar = 100;
 // var charCount = function(){
 //     charLeft.innerHTML = maxChar - tweet.value.length;
-//     if(tweet.value.length > maxChar){
+//     if(tweet.value.length >= maxChar){
 //         charLeft.className = 'over-limit';
 //     } else {
 //         charLeft.className = '';
